@@ -11,3 +11,14 @@ for line in almanack.find("pre").contents[0].split("\n\n"):
     if re.search("^\d{1,3}\.", line): 
         _,quote = line.strip().replace("\n","").replace('*','').split('. ',1)
         quotes.append( quote )
+        print(quote)
+
+"""
+TODO:
+
+- write aphorisms to a file
+
+For word list:
+- remove non alpha-numeric characters from each line
+"""
+
